@@ -10,9 +10,8 @@ class Block:
         self.timestamp = timestamp
         self.previous_hash = previous_hash # Adding the previous hash field
 
+    def compute_hash(block):
 
-def compute_hash(block):
-    
     block_string = json.dumps(self.__dict__, sort_keys=True)
     return sha256(block_string.encode()).hexdigest()
 
